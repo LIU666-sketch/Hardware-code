@@ -1,0 +1,113 @@
+<html>
+<body>
+<pre>
+<h1>�Vision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ��Vision V5.40.0.0
+Copyright (C) 2024 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 1 1111, 1111, LIC=QF82M-XS6UE-HLMCL-07RG6-R27WP-NNLZY
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.40.0.3
+Toolchain Path:  C:\Users\h2078\AppData\Local\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.22
+Assembler:       Armasm.exe V6.22
+Linker/Locator:  ArmLink.exe V6.22
+Library Manager: ArmAr.exe V6.22
+Hex Converter:   FromElf.exe V6.22
+CPU DLL:         SARMCM3.DLL V5.40.0.3
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      CMSIS_AGDI.dll V1.33.18.0
+Dialog DLL:      TCM.DLL V1.56.4.0
+ 
+<h2>Project:</h2>
+E:\ElectricityExperiment\Project\myProject_FinalWork\MDK-ARM\myProject_FinalWork.uvprojx
+Project File Date:  07/24/2024
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.22', folder: 'C:\Users\h2078\AppData\Local\Keil_v5\ARM\ARMCLANG\Bin'
+Build target 'myProject_FinalWork'
+../BSP/LCD/MyLCD.c(54): warning: passing 'const char *' to parameter of type 'char *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+   54 |         LCD_PutString(0, i*16, text_content[i], Black, Blue, 0);
+      |                                ^~~~~~~~~~~~~~~
+../BSP/LCD\LCD.h(82): note: passing argument to parameter 's' here
+   82 | void LCD_PutString(unsigned short x, unsigned short y, char *s, unsigned int fColor, unsigned int bColor,unsigned char flag);
+      |                                                              ^
+../BSP/LCD/MyLCD.c(64): warning: illegal character encoding in string literal [-Winvalid-source-encoding]
+   64 |         LCD_PutString(0, 0*16, "<B4><AE><BF><DA>ͨ<D0><C5><D1><DD>ʾϵͳ", Black, Blue, 0);
+      |                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../BSP/LCD/MyLCD.c(65): warning: illegal character encoding in string literal [-Winvalid-source-encoding]
+   65 |         LCD_PutString(0, 1*16, "<D5><FD><D4>ڽ<D3><CA>մ<AE><BF><DA><CA><FD><BE><DD>", Black, Blue, 0);
+      |                                 ^~~~~~~~~~~~ ~~~~~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../BSP/LCD/MyLCD.c(73): warning: illegal character encoding in string literal [-Winvalid-source-encoding]
+   73 |         LCD_PutString(0, 0*16, "<CA>յ<BD><D5><FD>ȷ<CA><FD><BE><DD>",              Black, Blue, 0);
+      |                                 ^~~~ ~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~
+../BSP/LCD/MyLCD.c(74): warning: passing 'const char[9]' to parameter of type 'char *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+   74 |         LCD_PutString(0, 1*16, person_info[mode-1].name,   Black, Blue, 0);
+      |                                ^~~~~~~~~~~~~~~~~~~~~~~~
+../BSP/LCD\LCD.h(82): note: passing argument to parameter 's' here
+   82 | void LCD_PutString(unsigned short x, unsigned short y, char *s, unsigned int fColor, unsigned int bColor,unsigned char flag);
+      |                                                              ^
+../BSP/LCD/MyLCD.c(75): warning: passing 'const char[12]' to parameter of type 'char *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+   75 |         LCD_PutString(0, 2*16, person_info[mode-1].number, Black, Blue, 0);
+      |                                ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../BSP/LCD\LCD.h(82): note: passing argument to parameter 's' here
+   82 | void LCD_PutString(unsigned short x, unsigned short y, char *s, unsigned int fColor, unsigned int bColor,unsigned char flag);
+      |                                                              ^
+../BSP/LCD/MyLCD.c(127): warning: illegal character encoding in string literal [-Winvalid-source-encoding]
+  127 |         "<B4><AE><BF><DA>ͨ<D0><C5><D1><DD>ʾϵͳ",
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../BSP/LCD/MyLCD.c(128): warning: illegal character encoding in string literal [-Winvalid-source-encoding]
+  128 |         "<B6><C5><CE><C4>һ 20221071298",
+      |          ^~~~~~~~~~~~~~~~
+../BSP/LCD/MyLCD.c(129): warning: illegal character encoding in string literal [-Winvalid-source-encoding]
+  129 |         "<BA><AB><F6>Ά<B4> 20221071469",
+      |          ^~~~~~~~~~~~ ~~~~
+../BSP/LCD/MyLCD.c(130): warning: illegal character encoding in string literal [-Winvalid-source-encoding]
+  130 |         "<CD><F5><B1><F2>Դ 20221082016",
+      |          ^~~~~~~~~~~~~~~~
+../BSP/LCD/MyLCD.c(131): warning: illegal character encoding in string literal [-Winvalid-source-encoding]
+  131 |         "<C7>밴<BC><FC>1<BD><AB><D0><C5>Ϣ<B7><A2><B5><BD><B4><AE><BF><DA>"
+      |          ^~~~  ~~~~~~~~ ~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../BSP/LCD/MyLCD.c(135): warning: illegal character encoding in string literal [-Winvalid-source-encoding]
+  135 |         "<B6><C5><CE><C4>һ",
+      |          ^~~~~~~~~~~~~~~~
+../BSP/LCD/MyLCD.c(4941): warning: illegal character encoding in string literal [-Winvalid-source-encoding]
+ 4941 |         "<BA><AB><F6>Ά<B4>",
+      |          ^~~~~~~~~~~~ ~~~~
+../BSP/LCD/MyLCD.c(9746): warning: illegal character encoding in string literal [-Winvalid-source-encoding]
+ 9746 |   "<CD><F5><B1><F2>Դ",
+      |    ^~~~~~~~~~~~~~~~
+14 warnings generated.
+compiling MyLCD.c...
+linking...
+Program Size: Code=18464 RO-data=358736 RW-data=36 ZI-data=1900  
+FromELF: creating hex file...
+"myProject_FinalWork\myProject_FinalWork.axf" - 0 Error(s), 14 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                https://www.keil.com/pack/ARM.CMSIS.6.1.0.pack
+                ARM::CMSIS@6.1.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 6.1.0
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.STM32G4xx_DFP.1.6.0.pack
+                Keil::STM32G4xx_DFP@1.6.0
+                STMicroelectronics STM32G4 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/_myProject_FinalWork
+  C:/Users/h2078/AppData/Local/Arm/Packs/ARM/CMSIS/6.1.0/CMSIS/Core/Include
+  C:/Users/h2078/AppData/Local/Arm/Packs/Keil/STM32G4xx_DFP/1.6.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE@6.1.0
+      Include file:  CMSIS/Core/Include/tz_context.h
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>
